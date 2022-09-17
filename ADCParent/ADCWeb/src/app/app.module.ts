@@ -9,15 +9,19 @@ import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
 import { DividerModule } from 'primeng/divider';
 import { ImageModule } from 'primeng/image';
+import { MenubarModule } from 'primeng/menubar';
 
 /* Own components */
 import { HomeComponent } from './pages/home/home.component';
 
 /* Others */
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, NavbarComponent, NotFoundComponent, PortfolioComponent],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -26,6 +30,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     DividerModule,
     FontAwesomeModule,
     ImageModule,
+    MenubarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
