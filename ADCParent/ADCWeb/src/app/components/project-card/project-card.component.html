@@ -1,0 +1,14 @@
+<p-card *ngIf="project; else notExist" [header]="project.title" [subheader]="project.technologies.join(' | ')"
+  styleClass="w-full full-height-content" [style]="{'max-width': '300px', 'height': '250px'}">
+  <ng-template pTemplate="content">
+    {{project.summary}}
+  </ng-template>
+  <ng-template pTemplate="footer">
+    <a [href]="project.appUrl" target="_blank" rel="noopener">Ir para
+      aplicativo</a>
+  </ng-template>
+</p-card>
+
+<ng-template #notExist>
+  <div class="hidden"></div>
+</ng-template>

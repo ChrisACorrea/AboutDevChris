@@ -1,6 +1,8 @@
+/* Angular Imports */
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,11 +16,15 @@ import { MenubarModule } from 'primeng/menubar';
 
 /* Own components */
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
 
 /* Pages */
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+
+/* Services */
+import { ProjectService } from './services';
 
 /* Others */
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -30,6 +36,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NavbarComponent,
     NotFoundComponent,
     PortfolioComponent,
+    ProjectCardComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -39,10 +46,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CardModule,
     DividerModule,
     FontAwesomeModule,
+    HttpClientModule,
     ImageModule,
     MenubarModule,
   ],
-  providers: [],
+  providers: [ProjectService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

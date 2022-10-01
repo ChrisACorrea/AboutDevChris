@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "title": "Dev Chris",
+    "appUrl": "https://chriscorrea.dev/",
+    "githubUrl": "",
+    "summary": "Um site para mostrar meu portfólio",
+    "technologies": [
+      "TypeScript",
+      "Angular"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Calculadora de Compras",
+    "appUrl": "https://www.calculadoradecompras.chriscorrea.dev/",
+    "githubUrl": "",
+    "summary": "Um aplicativo para calcular o valor total de suas compras.",
+    "technologies": [
+      "C#",
+      ".Net",
+      "Blazor WASM"
+    ]
+  }
+]

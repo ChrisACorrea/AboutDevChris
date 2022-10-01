@@ -1,0 +1,17 @@
+:host ::ng-deep .full-height-content.p-card {
+  .p-card-title {
+    height: 56px;
+  }
+  .p-card-body {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .p-card-content {
+    position: relative;
+    display: flex;
+    flex: 1;
+  }
+}

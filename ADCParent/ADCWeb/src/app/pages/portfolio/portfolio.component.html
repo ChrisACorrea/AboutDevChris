@@ -1,12 +1,5 @@
 <div class="m-4 flex flex-row flex-wrap justify-content-center gap-3">
-  <p-card header="Calculadora de Compras" subheader="C#, .NET, Blazor WASM" styleClass="w-full"
-    [style]="{'max-width': '300px'}">
-    Um aplicativo para calcular o valor total de suas compras.
-    <ng-template pTemplate="footer">
-      <a href="https://www.calculadoradecompras.chriscorrea.dev/" target="_blank" rel="noopener">Ir para
-        aplicativo</a>
-    </ng-template>
-  </p-card>
+  <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card>
 </div>
 
 <p-divider></p-divider>
