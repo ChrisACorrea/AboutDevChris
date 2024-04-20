@@ -1,0 +1,18 @@
+﻿@inherits LayoutComponentBase
+
+<MudThemingProvider IsDarkMode/>
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar Elevation="1">
+        <MudImage Src="images/dev_chris_logo.svg" Alt="Dev Chris Logo" Height="30"></MudImage>
+    </MudAppBar>
+
+    <MudMainContent>
+        <MudContainer>
+            @Body
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
